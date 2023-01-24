@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Nav from './components/Nav/Nav'
+import Contact from './components/Contact/Contact'
+import About from './components/About/About'
+import Portfolio from './components/Portfolio/Portfolio'
+import Experience from './components/Experience/Experience'
 
-function App() {
-  const [count, setCount] = useState(0)
+
+export default function App() {
 
   return (
-    <div className="App">
-      <h1>Home</h1>
-      <h2>Test updating code to github after deploying</h2>
-      <h2>Test updating code to github after deploying</h2>
-    </div>
+    <>
+      <div className='container'>
+          <Header></Header>
+          <Nav></Nav>
+          <About></About>
+          <Experience></Experience>
+          <Portfolio></Portfolio>
+          <Contact></Contact>
+      </div>
+      <Footer></Footer>
+    </>
   )
 }
-
-export default App
