@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Home</h1>
+      <h2>Test updating code to github after deploying</h2>
     </div>
   )
 }
